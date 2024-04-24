@@ -13,9 +13,11 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { BalanceTwo, Box, Cat, Copy, Download, GithubOne, Search, Twitter } from '@icon-park/react'
 import { Image, Space } from 'antd'
 import { Input } from './components/ui/input'
-import { findAuthorByIDF } from './authors/authors_info'
+import { author_info, findAuthorByIDF } from './authors/authors_info'
 import { image_info } from './logos/imageInfo'
 import { useState } from 'react'
+import { Toaster } from './components/ui/toaster'
+import { useToast } from './components/ui/use-toast'
 
 const TitleBar = () => {
   return (
@@ -31,21 +33,24 @@ const TitleBar = () => {
   )
 }
 
-const SearchBar = (props: { onSearch: (search: string) => void }) => {
+const SearchBar = (props: { onSearch: (search: string) => void; onFilter: (filter: string) => void }) => {
   return (
     <div className='flex flex-row items-center justify-between pb-4 font-mono'>
-      <Select>
+      <Select onValueChange={(value) => props.onFilter(value)}>
         <SelectTrigger className='w-[180px] text-gray-500'>
           <SelectValue placeholder='Author' />
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
             <SelectLabel>Filter by Author</SelectLabel>
-            <SelectItem value='apple'>Apple</SelectItem>
-            <SelectItem value='banana'>Banana</SelectItem>
-            <SelectItem value='blueberry'>Blueberry</SelectItem>
-            <SelectItem value='grapes'>Grapes</SelectItem>
-            <SelectItem value='pineapple'>Pineapple</SelectItem>
+            <SelectItem value='all'>All</SelectItem>
+            {author_info.map((author) => {
+              return (
+                <SelectItem key={author.idf} value={author.idf}>
+                  {author.name}
+                </SelectItem>
+              )
+            })}
           </SelectGroup>
         </SelectContent>
       </Select>
@@ -80,6 +85,35 @@ const AuthorInfo = (props: { author: string }) => {
   )
 }
 const LogoCard = (props: { author: string; image: string; name: string; repo: string }) => {
+  const { toast } = useToast()
+
+  const downloadImage = (imageSrc: string, fileName = 'download.png') => {
+    const a = document.createElement('a')
+    a.href = imageSrc
+    a.download = fileName
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+  }
+
+  const copyImageToClipboard = async (imageSrc: string) => {
+    try {
+      const img = await fetch(imageSrc)
+      const imgBlob = await img.blob()
+      const data = [new ClipboardItem({ [imgBlob.type]: imgBlob })]
+
+      await navigator.clipboard.write(data)
+      toast({
+        description: 'Copied to clipboard!',
+      })
+    } catch (error) {
+      toast({
+        description: 'Failed to Copy Image',
+        variant: 'destructive',
+      })
+    }
+  }
+
   return (
     <Card className='sm:w-full md:w-[300px] min-h-[350px] p-4 flex flex-col justify-between'>
       <div className='w-full aspect-video'>
@@ -89,10 +123,10 @@ const LogoCard = (props: { author: string; image: string; name: string; repo: st
         <div className='text-2xl font-mono font-bold mb-2 flex flex-row items-center justify-between'>
           {props.name}
           <Space className='flex flex-row items-center'>
-            <Button size={'icon'} variant={'outline'}>
+            <Button size={'icon'} variant={'outline'} onClick={() => copyImageToClipboard(props.image)}>
               <Copy />
             </Button>
-            <Button size={'icon'} variant={'outline'}>
+            <Button size={'icon'} variant={'outline'} onClick={() => downloadImage(props.image, props.name)}>
               <Download />
             </Button>
           </Space>
@@ -120,6 +154,13 @@ function App() {
       <div>
         <TitleBar />
         <SearchBar
+          onFilter={(value) => {
+            if (value === 'all') {
+              setLogoList(image_info)
+              return
+            }
+            setLogoList(image_info.filter((logo) => logo.author === value))
+          }}
           onSearch={(value) => {
             setLogoList(
               image_info.filter((logo) => {
@@ -148,6 +189,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Toaster />
     </div>
   )
 }
