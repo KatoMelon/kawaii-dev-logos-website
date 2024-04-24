@@ -15,6 +15,7 @@ import { Image, Space } from 'antd'
 import { Input } from './components/ui/input'
 import { findAuthorByIDF } from './authors/authors_info'
 import { image_info } from './logos/imageInfo'
+import { useState } from 'react'
 
 const TitleBar = () => {
   return (
@@ -30,7 +31,7 @@ const TitleBar = () => {
   )
 }
 
-const SearchBar = () => {
+const SearchBar = (props: { onSearch: (search: string) => void }) => {
   return (
     <div className='flex flex-row items-center justify-between pb-4 font-mono'>
       <Select>
@@ -48,7 +49,7 @@ const SearchBar = () => {
           </SelectGroup>
         </SelectContent>
       </Select>
-      <Input placeholder='Search...' className='ml-2 w-full' />
+      <Input placeholder='Search...' className='ml-2 w-full' onChange={(e) => props.onSearch(e.target.value)} />
       <Button className='ml-2'>
         <Search />
       </Button>
@@ -113,14 +114,23 @@ const LogoCard = (props: { author: string; image: string; name: string; repo: st
 }
 
 function App() {
+  const [logoList, setLogoList] = useState(image_info)
   return (
     <div className='w-full h-full bg-muted p-6 flex flex-col items-center'>
       <div>
         <TitleBar />
-        <SearchBar />
+        <SearchBar
+          onSearch={(value) => {
+            setLogoList(
+              image_info.filter((logo) => {
+                return logo.dirName.toLowerCase().includes(value.toLowerCase())
+              })
+            )
+          }}
+        />
         <div className='w-full overflow-auto' style={{ height: 'calc(100vh - 160px)' }}>
           <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
-            {image_info
+            {logoList
               .sort((a, b) => {
                 return a.dirName > b.dirName ? 1 : -1
               })
