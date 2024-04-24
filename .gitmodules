@@ -1,0 +1,6 @@
+[submodule "src/logos/assets/sawaratsuki"]
+	path = src/logos/assets/sawaratsuki
+	url = https://github.com/SAWARATSUKI/ServiceLogos.git
+[submodule "src/logos/assets/aikoyori"]
+	path = src/logos/assets/aikoyori
+	url = https://github.com/Aikoyori/ProgrammingVTuberLogos.git
