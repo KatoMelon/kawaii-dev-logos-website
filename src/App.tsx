@@ -25,7 +25,7 @@ const TitleBar = () => {
       <Space className='font-mono flex flex-row items-center text-2xl font-bold'>
         <Cat theme='filled' /> Kawaii Dev Logos
       </Space>
-      <Button variant={'link'}>
+      <Button variant={'link'} onClick={() => window.open('https://github.com/KatoMelon/kawaii-dev-logos-website')}>
         <GithubOne className='mr-1' size={18} />
         This Site
       </Button>

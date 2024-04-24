@@ -87,6 +87,7 @@ import img85 from './public/logos/img85.png';
 import img86 from './public/logos/img86.png';
 import img87 from './public/logos/img87.png';
 import img88 from './public/logos/img88.png';
+import img89 from './public/logos/img89.png';
 
 export const image_info = [
   { image: img0, dirName: 'Bun', author: 'aikoyori' },
@@ -170,12 +171,13 @@ export const image_info = [
   { image: img78, dirName: 'Swift', author: 'sawaratsuki' },
   { image: img79, dirName: 'Tailwindcss', author: 'sawaratsuki' },
   { image: img80, dirName: 'Teamspeak', author: 'sawaratsuki' },
-  { image: img81, dirName: 'UnityBlender', author: 'sawaratsuki' },
-  { image: img82, dirName: 'Vim', author: 'sawaratsuki' },
-  { image: img83, dirName: 'Vite', author: 'sawaratsuki' },
-  { image: img84, dirName: 'Voicemod', author: 'sawaratsuki' },
-  { image: img85, dirName: 'Vrchat', author: 'sawaratsuki' },
-  { image: img86, dirName: 'Vue', author: 'sawaratsuki' },
-  { image: img87, dirName: 'Wallhack', author: 'sawaratsuki' },
-  { image: img88, dirName: 'X', author: 'sawaratsuki' }
+  { image: img81, dirName: 'Ubuntu', author: 'sawaratsuki' },
+  { image: img82, dirName: 'UnityBlender', author: 'sawaratsuki' },
+  { image: img83, dirName: 'Vim', author: 'sawaratsuki' },
+  { image: img84, dirName: 'Vite', author: 'sawaratsuki' },
+  { image: img85, dirName: 'Voicemod', author: 'sawaratsuki' },
+  { image: img86, dirName: 'Vrchat', author: 'sawaratsuki' },
+  { image: img87, dirName: 'Vue', author: 'sawaratsuki' },
+  { image: img88, dirName: 'Wallhack', author: 'sawaratsuki' },
+  { image: img89, dirName: 'X', author: 'sawaratsuki' }
 ];
