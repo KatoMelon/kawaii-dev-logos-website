@@ -9,23 +9,23 @@ import img7 from './public/logos/img7.png';
 import img8 from './public/logos/img8.png';
 import img9 from './public/logos/img9.png';
 import img10 from './public/logos/img10.png';
-import img11 from './public/logos/img11.svg';
+import img11 from './public/logos/img11.png';
 import img12 from './public/logos/img12.png';
 import img13 from './public/logos/img13.svg';
 import img14 from './public/logos/img14.png';
 import img15 from './public/logos/img15.svg';
 import img16 from './public/logos/img16.png';
-import img17 from './public/logos/img17.png';
+import img17 from './public/logos/img17.svg';
 import img18 from './public/logos/img18.png';
 import img19 from './public/logos/img19.png';
 import img20 from './public/logos/img20.png';
-import img21 from './public/logos/img21.svg';
+import img21 from './public/logos/img21.png';
 import img22 from './public/logos/img22.png';
 import img23 from './public/logos/img23.svg';
 import img24 from './public/logos/img24.png';
 import img25 from './public/logos/img25.svg';
 import img26 from './public/logos/img26.png';
-import img27 from './public/logos/img27.png';
+import img27 from './public/logos/img27.svg';
 import img28 from './public/logos/img28.png';
 import img29 from './public/logos/img29.png';
 import img30 from './public/logos/img30.png';
@@ -88,6 +88,12 @@ import img86 from './public/logos/img86.png';
 import img87 from './public/logos/img87.png';
 import img88 from './public/logos/img88.png';
 import img89 from './public/logos/img89.png';
+import img90 from './public/logos/img90.png';
+import img91 from './public/logos/img91.png';
+import img92 from './public/logos/img92.png';
+import img93 from './public/logos/img93.png';
+import img94 from './public/logos/img94.png';
+import img95 from './public/logos/img95.png';
 
 export const image_info = [
   { image: img0, dirName: 'Bun', author: 'aikoyori' },
@@ -98,86 +104,92 @@ export const image_info = [
   { image: img5, dirName: 'Docker', author: 'aikoyori' },
   { image: img6, dirName: 'ElysiaJS', author: 'aikoyori' },
   { image: img7, dirName: 'ElysiaJS', author: 'aikoyori' },
-  { image: img8, dirName: 'GodotEngine', author: 'aikoyori' },
-  { image: img9, dirName: 'GodotEngine', author: 'aikoyori' },
-  { image: img10, dirName: 'ImHex', author: 'aikoyori' },
-  { image: img11, dirName: 'ImHex', author: 'aikoyori' },
+  { image: img8, dirName: 'GameChanger', author: 'aikoyori' },
+  { image: img9, dirName: 'GameChanger', author: 'aikoyori' },
+  { image: img10, dirName: 'GodotEngine', author: 'aikoyori' },
+  { image: img11, dirName: 'GodotEngine', author: 'aikoyori' },
   { image: img12, dirName: 'ImHex', author: 'aikoyori' },
   { image: img13, dirName: 'ImHex', author: 'aikoyori' },
   { image: img14, dirName: 'ImHex', author: 'aikoyori' },
   { image: img15, dirName: 'ImHex', author: 'aikoyori' },
-  { image: img16, dirName: 'IntelliJIDEA', author: 'aikoyori' },
-  { image: img17, dirName: 'IntelliJIDEA', author: 'aikoyori' },
-  { image: img18, dirName: 'Kubernetes', author: 'aikoyori' },
-  { image: img19, dirName: 'Kubernetes', author: 'aikoyori' },
-  { image: img20, dirName: 'Mirin Template for NotITG', author: 'aikoyori' },
-  { image: img21, dirName: 'Mirin Template for NotITG', author: 'aikoyori' },
+  { image: img16, dirName: 'ImHex', author: 'aikoyori' },
+  { image: img17, dirName: 'ImHex', author: 'aikoyori' },
+  { image: img18, dirName: 'IntelliJIDEA', author: 'aikoyori' },
+  { image: img19, dirName: 'IntelliJIDEA', author: 'aikoyori' },
+  { image: img20, dirName: 'Kubernetes', author: 'aikoyori' },
+  { image: img21, dirName: 'Kubernetes', author: 'aikoyori' },
   { image: img22, dirName: 'Mirin Template for NotITG', author: 'aikoyori' },
   { image: img23, dirName: 'Mirin Template for NotITG', author: 'aikoyori' },
   { image: img24, dirName: 'Mirin Template for NotITG', author: 'aikoyori' },
   { image: img25, dirName: 'Mirin Template for NotITG', author: 'aikoyori' },
-  { image: img26, dirName: 'Neovim', author: 'aikoyori' },
-  { image: img27, dirName: 'Neovim', author: 'aikoyori' },
-  { image: img28, dirName: 'PaperMC', author: 'aikoyori' },
-  { image: img29, dirName: 'PaperMC', author: 'aikoyori' },
-  { image: img30, dirName: 'VSCode', author: 'aikoyori' },
-  { image: img31, dirName: 'VSCode', author: 'aikoyori' },
-  { image: img32, dirName: 'Angular', author: 'sawaratsuki' },
-  { image: img33, dirName: 'Angular', author: 'sawaratsuki' },
-  { image: img34, dirName: 'ArchLinux', author: 'sawaratsuki' },
-  { image: img35, dirName: 'C', author: 'sawaratsuki' },
-  { image: img36, dirName: 'C#', author: 'sawaratsuki' },
-  { image: img37, dirName: 'C#', author: 'sawaratsuki' },
-  { image: img38, dirName: 'C++', author: 'sawaratsuki' },
-  { image: img39, dirName: 'C,C#,C++', author: 'sawaratsuki' },
-  { image: img40, dirName: 'Clion', author: 'sawaratsuki' },
-  { image: img41, dirName: 'Cloudflare', author: 'sawaratsuki' },
-  { image: img42, dirName: 'Cobol', author: 'sawaratsuki' },
-  { image: img43, dirName: 'Crowdstrike', author: 'sawaratsuki' },
-  { image: img44, dirName: 'FORTRAN', author: 'sawaratsuki' },
-  { image: img45, dirName: 'Figma', author: 'sawaratsuki' },
-  { image: img46, dirName: 'Flipper Zero', author: 'sawaratsuki' },
-  { image: img47, dirName: 'Flutter', author: 'sawaratsuki' },
-  { image: img48, dirName: 'Github', author: 'sawaratsuki' },
-  { image: img49, dirName: 'Gitlab', author: 'sawaratsuki' },
-  { image: img50, dirName: 'Gnuemacs', author: 'sawaratsuki' },
-  { image: img51, dirName: 'Go', author: 'sawaratsuki' },
-  { image: img52, dirName: 'Haskell', author: 'sawaratsuki' },
-  { image: img53, dirName: 'Haskell', author: 'sawaratsuki' },
-  { image: img54, dirName: 'Hono', author: 'sawaratsuki' },
-  { image: img55, dirName: 'Html', author: 'sawaratsuki' },
-  { image: img56, dirName: 'Htmx', author: 'sawaratsuki' },
-  { image: img57, dirName: 'IamSeries', author: 'sawaratsuki' },
-  { image: img58, dirName: 'IamSeries', author: 'sawaratsuki' },
-  { image: img59, dirName: 'Java', author: 'sawaratsuki' },
-  { image: img60, dirName: 'Juniper', author: 'sawaratsuki' },
-  { image: img61, dirName: 'Kotlin', author: 'sawaratsuki' },
-  { image: img62, dirName: 'Kotlin', author: 'sawaratsuki' },
-  { image: img63, dirName: 'Laravel', author: 'sawaratsuki' },
-  { image: img64, dirName: 'Mui', author: 'sawaratsuki' },
-  { image: img65, dirName: 'Next.js', author: 'sawaratsuki' },
-  { image: img66, dirName: 'Node.js', author: 'sawaratsuki' },
-  { image: img67, dirName: 'Photoshop', author: 'sawaratsuki' },
-  { image: img68, dirName: 'Python', author: 'sawaratsuki' },
-  { image: img69, dirName: 'Qwik.js', author: 'sawaratsuki' },
-  { image: img70, dirName: 'RaspberryPi', author: 'sawaratsuki' },
-  { image: img71, dirName: 'React', author: 'sawaratsuki' },
-  { image: img72, dirName: 'RhineLab', author: 'sawaratsuki' },
-  { image: img73, dirName: 'Rider', author: 'sawaratsuki' },
-  { image: img74, dirName: 'Rstudio', author: 'sawaratsuki' },
-  { image: img75, dirName: 'Ruby', author: 'sawaratsuki' },
-  { image: img76, dirName: 'Rust', author: 'sawaratsuki' },
-  { image: img77, dirName: 'Streamloots', author: 'sawaratsuki' },
-  { image: img78, dirName: 'Swift', author: 'sawaratsuki' },
-  { image: img79, dirName: 'Tailwindcss', author: 'sawaratsuki' },
-  { image: img80, dirName: 'Teamspeak', author: 'sawaratsuki' },
-  { image: img81, dirName: 'Ubuntu', author: 'sawaratsuki' },
-  { image: img82, dirName: 'UnityBlender', author: 'sawaratsuki' },
-  { image: img83, dirName: 'Vim', author: 'sawaratsuki' },
-  { image: img84, dirName: 'Vite', author: 'sawaratsuki' },
-  { image: img85, dirName: 'Voicemod', author: 'sawaratsuki' },
-  { image: img86, dirName: 'Vrchat', author: 'sawaratsuki' },
-  { image: img87, dirName: 'Vue', author: 'sawaratsuki' },
-  { image: img88, dirName: 'Wallhack', author: 'sawaratsuki' },
-  { image: img89, dirName: 'X', author: 'sawaratsuki' }
+  { image: img26, dirName: 'Mirin Template for NotITG', author: 'aikoyori' },
+  { image: img27, dirName: 'Mirin Template for NotITG', author: 'aikoyori' },
+  { image: img28, dirName: 'Neovim', author: 'aikoyori' },
+  { image: img29, dirName: 'Neovim', author: 'aikoyori' },
+  { image: img30, dirName: 'PaperMC', author: 'aikoyori' },
+  { image: img31, dirName: 'PaperMC', author: 'aikoyori' },
+  { image: img32, dirName: 'VSCode', author: 'aikoyori' },
+  { image: img33, dirName: 'VSCode', author: 'aikoyori' },
+  { image: img34, dirName: 'Angular', author: 'sawaratsuki' },
+  { image: img35, dirName: 'Angular', author: 'sawaratsuki' },
+  { image: img36, dirName: 'ArchLinux', author: 'sawaratsuki' },
+  { image: img37, dirName: 'C', author: 'sawaratsuki' },
+  { image: img38, dirName: 'C#', author: 'sawaratsuki' },
+  { image: img39, dirName: 'C#', author: 'sawaratsuki' },
+  { image: img40, dirName: 'C++', author: 'sawaratsuki' },
+  { image: img41, dirName: 'C,C#,C++', author: 'sawaratsuki' },
+  { image: img42, dirName: 'Clion', author: 'sawaratsuki' },
+  { image: img43, dirName: 'Cloudflare', author: 'sawaratsuki' },
+  { image: img44, dirName: 'Cobol', author: 'sawaratsuki' },
+  { image: img45, dirName: 'Crowdstrike', author: 'sawaratsuki' },
+  { image: img46, dirName: 'FORTRAN', author: 'sawaratsuki' },
+  { image: img47, dirName: 'Figma', author: 'sawaratsuki' },
+  { image: img48, dirName: 'FlipperZero', author: 'sawaratsuki' },
+  { image: img49, dirName: 'Flutter', author: 'sawaratsuki' },
+  { image: img50, dirName: 'GitHub', author: 'sawaratsuki' },
+  { image: img51, dirName: 'GitLab', author: 'sawaratsuki' },
+  { image: img52, dirName: 'Gnuemacs', author: 'sawaratsuki' },
+  { image: img53, dirName: 'Go', author: 'sawaratsuki' },
+  { image: img54, dirName: 'Haskell', author: 'sawaratsuki' },
+  { image: img55, dirName: 'Haskell', author: 'sawaratsuki' },
+  { image: img56, dirName: 'Hono', author: 'sawaratsuki' },
+  { image: img57, dirName: 'Html', author: 'sawaratsuki' },
+  { image: img58, dirName: 'Htmx', author: 'sawaratsuki' },
+  { image: img59, dirName: 'IamSeries', author: 'sawaratsuki' },
+  { image: img60, dirName: 'IamSeries', author: 'sawaratsuki' },
+  { image: img61, dirName: 'IamSeries', author: 'sawaratsuki' },
+  { image: img62, dirName: 'IamSeries', author: 'sawaratsuki' },
+  { image: img63, dirName: 'Java', author: 'sawaratsuki' },
+  { image: img64, dirName: 'Juniper', author: 'sawaratsuki' },
+  { image: img65, dirName: 'Kotlin', author: 'sawaratsuki' },
+  { image: img66, dirName: 'Kotlin', author: 'sawaratsuki' },
+  { image: img67, dirName: 'Laravel', author: 'sawaratsuki' },
+  { image: img68, dirName: 'Mui', author: 'sawaratsuki' },
+  { image: img69, dirName: 'Next.js', author: 'sawaratsuki' },
+  { image: img70, dirName: 'Node.js', author: 'sawaratsuki' },
+  { image: img71, dirName: 'Photoshop', author: 'sawaratsuki' },
+  { image: img72, dirName: 'Python', author: 'sawaratsuki' },
+  { image: img73, dirName: 'Qwik.js', author: 'sawaratsuki' },
+  { image: img74, dirName: 'RaspberryPi', author: 'sawaratsuki' },
+  { image: img75, dirName: 'React', author: 'sawaratsuki' },
+  { image: img76, dirName: 'RhineLab', author: 'sawaratsuki' },
+  { image: img77, dirName: 'Rider', author: 'sawaratsuki' },
+  { image: img78, dirName: 'Rstudio', author: 'sawaratsuki' },
+  { image: img79, dirName: 'Ruby', author: 'sawaratsuki' },
+  { image: img80, dirName: 'Rust', author: 'sawaratsuki' },
+  { image: img81, dirName: 'Streamloots', author: 'sawaratsuki' },
+  { image: img82, dirName: 'Swift', author: 'sawaratsuki' },
+  { image: img83, dirName: 'Tailwindcss', author: 'sawaratsuki' },
+  { image: img84, dirName: 'Teamspeak', author: 'sawaratsuki' },
+  { image: img85, dirName: 'Twitter', author: 'sawaratsuki' },
+  { image: img86, dirName: 'TypeScript', author: 'sawaratsuki' },
+  { image: img87, dirName: 'Ubuntu', author: 'sawaratsuki' },
+  { image: img88, dirName: 'UnityBlender', author: 'sawaratsuki' },
+  { image: img89, dirName: 'Vim', author: 'sawaratsuki' },
+  { image: img90, dirName: 'Vite', author: 'sawaratsuki' },
+  { image: img91, dirName: 'Voicemod', author: 'sawaratsuki' },
+  { image: img92, dirName: 'Vrchat', author: 'sawaratsuki' },
+  { image: img93, dirName: 'Vue', author: 'sawaratsuki' },
+  { image: img94, dirName: 'Wallhack', author: 'sawaratsuki' },
+  { image: img95, dirName: 'X', author: 'sawaratsuki' }
 ];
